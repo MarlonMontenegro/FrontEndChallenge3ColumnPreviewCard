@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+
+    /* PRIMARY COLORS */
+
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* NEUTRAL COLORS */
+
+    --Transparent-white: hsla(0, 0%, 100%, 0.75); /* (paragraphs)*/
+    --Very-light-gray: hsl(0, 0%, 95%); /* (background, headings, buttons) */
+
+
+    /* Fonts */
+
+    --font-size-body: 15px;
+    --font-size-hedings: 25px;
+    --font-weight: 400;
+    --font-weight-btn: 700;
+    --font-lexend-deca: 'Lexend Deca', sans-serif;
+    --fonts-big-shoulders: 'Big Shoulders Display', sans-serif;
+
+}
+
+
+body {
+    background-color: var(--Very-light-gray);
+
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.card-one, .card-two, .card-three {
+    height: 350px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    margin: -10px;
+}
+
+section h3 {
+    font-family: var(--font-lexend-deca);
+    color: var(--Very-light-gray);
+    font-size: var(--font-size-hedings);
+}
+
+section p {
+    font-family: var(--fonts-big-shoulders);
+    color: var(--Transparent-white);
+    font-size: var(--font-size-body);
+}
+
+
+section img {
+    width: 50px;
+    height: auto;
+}
+
+.card-one {
+    background-color: var(--Bright-orange);
+    border-radius: 10px;
+}
+
+
+.card-two {
+    background-color: var(--Dark-cyan);
+}
+
+.card-three {
+    background-color: var(--Very-dark-cyan);
+    border-radius: 0 10px 10px 0;
+}
+
+/* BUTTONS STYLE */
+
+
+section button {
+    background-color: var(--Very-light-gray);
+    border-style: none;
+    border-radius: 20px;
+    margin-top: 60px;
+    height: 40px;
+    width: 100px;
+    font-weight: var(--font-weight-btn);
+    cursor: pointer;
+
+}
+
+
+.card-one button {
+    color: var(--Bright-orange);
+    transition: background-color 0.3s ease;
+}
+
+.card-one button:hover {
+    color: var(--Bright-orange);
+    border: 5px solid var(--Very-light-gray);
+}
+
+
+
+.card-two button {
+    color: var(--Dark-cyan);
+    transition: background-color 0.3s ease;
+}
+
+.card-two button:hover {
+    color: var(--Dark-cyan);
+    border: 5px solid var(--Very-light-gray);
+}
+
+
+.card-three button {
+    color: var(--Very-dark-cyan);
+    transition: background-color 0.3s ease;
+}
+
+.card-three button:hover {
+    color: var(--Very-dark-cyan);
+    border: 5px solid var(--Very-light-gray);
+}
+
+
+/* RESPONSIVE 375px */
+
