@@ -97,7 +97,6 @@ section img {
     width: 125px;
     font-weight: var(--font-weight-btn);
     cursor: pointer;
-
 }
 
 
@@ -112,7 +111,6 @@ section img {
     border: 2px solid var(--Very-light-gray);
 }
 
-
 .card-two button {
     color: var(--Dark-cyan);
     transition: background-color 0.3s ease;
@@ -124,7 +122,6 @@ section img {
     border: 2px solid var(--Very-light-gray);
 }
 
-
 .card-three button {
     color: var(--Very-dark-cyan);
     transition: background-color 0.3s ease;
@@ -135,7 +132,6 @@ section img {
     color: var(--Very-light-gray);
     border: 2px solid var(--Very-light-gray);
 }
-
 
 /* (RESPONSIVE MOBILE DEVICES) 375px */
 
@@ -151,7 +147,6 @@ section img {
 
 
 }
-
 
 /* (RESPONSIVE MOBILE DEVICES) 375px */
 
