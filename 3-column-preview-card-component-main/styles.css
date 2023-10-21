@@ -88,29 +88,29 @@ section img {
 /* BUTTONS STYLE */
 
 
-section button {
+.btn-hoover {
     background-color: var(--Very-light-gray);
     border-style: none;
     border-radius: 20px;
     margin-top: 60px;
     height: 40px;
-    width: 100px;
+    width: 125px;
     font-weight: var(--font-weight-btn);
     cursor: pointer;
 
 }
 
 
-.card-one button {
+.btn-hoover {
     color: var(--Bright-orange);
     transition: background-color 0.3s ease;
 }
 
-.card-one button:hover {
-    color: var(--Bright-orange);
-    border: 5px solid var(--Very-light-gray);
+.btn-hoover:hover {
+    background-color: var(--Bright-orange);
+    color: var(--Very-light-gray);
+    border: 2px solid var(--Very-light-gray);
 }
-
 
 
 .card-two button {
@@ -119,8 +119,9 @@ section button {
 }
 
 .card-two button:hover {
-    color: var(--Dark-cyan);
-    border: 5px solid var(--Very-light-gray);
+    background-color: var(--Dark-cyan);
+    color: var(--Very-light-gray);
+    border: 2px solid var(--Very-light-gray);
 }
 
 
@@ -130,10 +131,36 @@ section button {
 }
 
 .card-three button:hover {
-    color: var(--Very-dark-cyan);
-    border: 5px solid var(--Very-light-gray);
+    background-color: var(--Very-dark-cyan);
+    color: var(--Very-light-gray);
+    border: 2px solid var(--Very-light-gray);
 }
 
 
-/* RESPONSIVE 375px */
+/* (RESPONSIVE MOBILE DEVICES) 375px */
 
+@media screen and (max-width: 375px) {
+
+
+    .grid-container {
+        padding-top: 500px;
+        padding-bottom: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+}
+
+
+/* (RESPONSIVE MOBILE DEVICES) 375px */
+
+@media screen and (max-width: 728px) {
+
+    .grid-container {
+        padding-top: 500px;
+        padding-bottom: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
